@@ -76,3 +76,4 @@ jobs:
           git add k8s.yaml
           git diff --staged --quiet || git commit -m "ci: update image to ${{ needs.build-and-push.outputs.image_tag }}"
           git push
+          
